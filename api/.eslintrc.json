@@ -9,12 +9,16 @@
     "SharedArrayBuffer": "readonly"
   },
   "parser": "@typescript-eslint/parser",
-  "extends": ["plugin:@typescript-eslint/recommended"],
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "@typescript-eslint/eslint-plugin"
+  ],
   "parserOptions": {
     "ecmaVersion": 2018
   },
   "rules": {
-    "quotes": ["error", "double"],
+    "quotes": ["error", "single"],
     "@typescript-eslint/no-explicit-any": 1,
     "@typescript-eslint/no-inferrable-types": [
       "warn",

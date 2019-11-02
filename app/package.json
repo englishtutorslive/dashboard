@@ -7,6 +7,9 @@
     "@types/node": "12.11.2",
     "@types/react": "16.9.9",
     "@types/react-dom": "16.9.2",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.18.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0",
@@ -20,7 +23,11 @@
   },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
-    "extends": "react-app",
+    "extends": [
+      "plugin:@typescript-eslint/recommended",
+      "prettier/@typescript-eslint",
+      "@typescript-eslint/eslint-plugin"
+    ],
     "rules": {
       "no-duplicate-imports": "error",
       "prefer-const": "error",
@@ -40,7 +47,8 @@
     ]
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.5.0",
-    "@typescript-eslint/parser": "^2.5.0"
+    "@typescript-eslint/eslint-plugin": "^2.6.0",
+    "@typescript-eslint/parser": "^2.6.0",
+    "eslint": "^6.6.0"
   }
 }
