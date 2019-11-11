@@ -25,11 +25,43 @@ export default {
     large: "0 0 24px rgba(0, 0, 0, .125)"
   },
   variants: {},
-  text: {},
+  text: {
+    h1: {
+      color: "red",
+      fontSize: 6,
+      fontWeight: "bold"
+    },
+    h2: {
+      color: "green",
+      fontSize: 5,
+      fontWeight: "normal"
+    },
+    h3: {
+      fontSize: 4,
+      fontWeight: "bold"
+    },
+    h4: {
+      fontSize: 4,
+      fontWeight: "normal"
+    },
+    h5: {
+      fontSize: 3,
+      fontWeight: "bold"
+    },
+    h6: {
+      fontSize: 3,
+      fontWeight: "normal"
+    }
+  },
   buttons: {
     primary: {
       color: "white",
-      bg: "primary"
+      bg: "red"
+    },
+    outline: {
+      color: "primary",
+      bg: "blue",
+      boxShadow: "inset 0 0 0 2px"
     }
   }
 };
